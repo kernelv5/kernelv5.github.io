@@ -1,0 +1,11 @@
+title: Kernelv5, Inc.
+description: Elite Cloud Infrastructure & Technical Staffing Solutions.
+theme: minima
+markdown: kramdown
+permalink: pretty
+exclude:
+  - main.css
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+# No author or internal links per privacy constraint
