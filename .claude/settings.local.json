@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python serve.py)",
+      "WebFetch(domain:developer.hashicorp.com)"
+    ]
+  }
+}
