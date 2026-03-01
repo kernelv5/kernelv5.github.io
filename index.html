@@ -3,70 +3,522 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kernelv5, Inc. | Elite Cloud Infrastructure & Technical Staffing Solutions</title>
+	<title>Kernelv5, Inc. | Platform Engineering Excellence</title>
+	<meta name="description" content="Elite cloud infrastructure and technical staffing for enterprise teams that can't afford to slow down.">
+	<meta property="og:title" content="Kernelv5, Inc. | Platform Engineering Excellence">
+	<meta property="og:description" content="Elite cloud infrastructure and technical staffing for enterprise teams.">
+	<meta property="og:type" content="website">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/main.css">
 </head>
 <body>
-	<header class="hero">
-		<h1>Kernelv5, Inc.</h1>
-		<h2>Elite Cloud Infrastructure & Technical Staffing Solutions.</h2>
-		<p class="subhead">A Delaware-incorporated technology firm specializing in high-scale automation, serverless migrations, and global talent acquisition.</p>
+
+	<!-- ── Hero ─────────────────────────────────────────── -->
+	<header class="hero" id="home">
+		<div class="hero-content">
+			<span class="hero-eyebrow">Platform Engineering &middot; DevOps &middot; Staffing</span>
+			<h1>Your Partner in<br>Platform Engineering<br>Excellence.</h1>
+			<p class="subhead">Elite infrastructure. Zero slowdown.</p>
+			<div class="hero-actions">
+				<a href="#contact" class="btn-primary">Request a Consultation</a>
+				<a href="#services" class="btn-ghost">Explore Services</a>
+			</div>
+		</div>
+		<div class="hero-canvas-wrap">
+			<div class="svc-constellation">
+
+				<!-- Hub -->
+				<div class="svc-card svc-card--hub" style="top:40%;left:36%">
+					<span class="svc-dot" style="--cx:0,212,255"></span>
+					<span class="svc-name">Cloud Technology</span>
+					<span class="svc-sub">Core Platform</span>
+				</div>
+
+				<!-- IaC -->
+				<div class="svc-card" style="top:24%;left:2%;--cx:245,166,40;--delay:0.6s">
+					<span class="svc-dot"></span>
+					<span class="svc-name">IaC</span>
+					<span class="svc-sub">Terraform &middot; Pulumi</span>
+				</div>
+
+				<!-- Kubernetes -->
+				<div class="svc-card" style="top:4%;left:32%;--cx:16,219,197;--delay:1.1s">
+					<span class="svc-dot"></span>
+					<span class="svc-name">Kubernetes</span>
+					<div class="svc-tags">
+						<span class="svc-tag">Docker</span>
+						<span class="svc-tag">Container</span>
+					</div>
+				</div>
+
+				<!-- Monitoring -->
+				<div class="svc-card" style="top:10%;left:66%;--cx:212,111,200;--delay:0.3s">
+					<span class="svc-dot"></span>
+					<span class="svc-name">Monitoring</span>
+					<span class="svc-sub">Observability</span>
+					<div class="svc-sparkline">
+						<svg viewBox="0 0 80 22" preserveAspectRatio="none" class="svc-spark-svg">
+							<polyline class="spark-line spark-line--1" points="0,18 10,12 20,15 30,8 40,11 50,5 60,9 70,4 80,7"/>
+							<polyline class="spark-line spark-line--2" points="0,20 10,16 20,18 30,13 40,16 50,10 60,14 70,9 80,12"/>
+						</svg>
+					</div>
+				</div>
+
+				<!-- Security -->
+				<div class="svc-card" style="top:56%;left:66%;--cx:255,70,70;--delay:0.9s">
+					<span class="svc-dot"></span>
+					<span class="svc-name">Security</span>
+					<div class="svc-tags">
+						<span class="svc-tag">Audit</span>
+						<span class="svc-tag">Compliance</span>
+					</div>
+				</div>
+
+				<!-- Application -->
+				<div class="svc-card" style="top:64%;left:28%;--cx:72,210,120;--delay:1.4s">
+					<span class="svc-dot"></span>
+					<span class="svc-name">Application</span>
+					<div class="svc-tags">
+						<span class="svc-tag">CI/CD</span>
+					</div>
+				</div>
+
+				<!-- Connecting lines SVG -->
+				<svg class="svc-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<line x1="40" y1="47" x2="14" y2="42"/>
+					<line x1="44" y1="42" x2="47" y2="15"/>
+					<line x1="56" y1="42" x2="76" y2="19"/>
+					<line x1="56" y1="50" x2="76" y2="63"/>
+					<line x1="44" y1="52" x2="38" y2="72"/>
+				</svg>
+
+			</div>
+		</div>
 	</header>
 
-	<section class="dual-mission">
-		<div class="mission">
-			<span class="icon">&#128188;</span>
-			<h3>Staff Recruiting Solution</h3>
-			<p>Bridging the gap between enterprise needs and top-tier technical talent.</p>
+	<!-- ── Services Map ─────────────────────────────────── -->
+	<section class="services" id="services">
+		<div class="services-header">
+			<span class="section-label">What We Deliver</span>
+			<h2>Infrastructure. Automation.<br>Talent. Delivered.</h2>
 		</div>
-		<div class="mission">
-			<span class="icon">&#9881;&#65039;</span>
-			<h3>Technical Solution Provider</h3>
-			<p>Delivering end-to-end engineering excellence for modern cloud ecosystems.</p>
+		<div class="services-map">
+			<div class="service-node">
+				<span class="node-index">01</span>
+				<h3>Cloud Infrastructure</h3>
+				<p>AWS &amp; Azure reliability engineering, cost optimization, and multi-cloud operations at enterprise scale.</p>
+				<span class="node-tag">Infrastructure</span>
+			</div>
+			<div class="service-node">
+				<span class="node-index">02</span>
+				<h3>IaC Automation</h3>
+				<p>Terraform, Pulumi, and custom pipelines that eliminate manual toil, drift, and configuration errors.</p>
+				<span class="node-tag">Automation</span>
+			</div>
+			<div class="service-node">
+				<span class="node-index">03</span>
+				<h3>Kubernetes Migration</h3>
+				<p>End-to-end migration from legacy VMs to containerized workloads on AKS, EKS, or GKE.</p>
+				<span class="node-tag">Migration</span>
+			</div>
+			<div class="service-node">
+				<span class="node-index">04</span>
+				<h3>Custom Tooling</h3>
+				<p>Bespoke automation software engineered specifically for your infrastructure challenges and workflows.</p>
+				<span class="node-tag">Engineering</span>
+			</div>
+			<div class="service-node">
+				<span class="node-index">05</span>
+				<h3>Security Auditing</h3>
+				<p>Cloud governance, compliance frameworks, and deep hardening for regulated and high-assurance industries.</p>
+				<span class="node-tag">Security</span>
+			</div>
+			<div class="service-node">
+				<span class="node-index">06</span>
+				<h3>Technical Staffing</h3>
+				<p>Top-tier DevOps, SRE, and platform engineering professionals sourced and placed globally.</p>
+				<span class="node-tag">Staffing</span>
+			</div>
 		</div>
 	</section>
 
-	<section class="services-grid">
-		<div class="service">
-			<span class="icon">&#9729;&#65039;</span>
-			<h4>Managing Cloud Infrastructure</h4>
-			<p>AWS & Azure reliability and cost optimization.</p>
+	<!-- ── About ─────────────────────────────────────────── -->
+	<section class="about" id="about">
+		<div class="about-content">
+			<span class="section-label">About Us</span>
+			<h2>Global Reach.<br>Local Precision.</h2>
+			<p>Kernelv5, Inc. is a Delaware C-Corp with a primary operational hub in Hong Kong, delivering AI-enabled DevOps, platform engineering, and technical talent acquisition to enterprise clients across North America and Asia-Pacific. We operate under a broad mandate to provide any lawful technology-related service with a focus on measurable business outcomes.</p>
 		</div>
-		<div class="service">
-			<span class="icon">&#128295;</span>
-			<h4>Infra Automation (IaC)</h4>
-			<p>Infrastructure as Code to eliminate manual error.</p>
-		</div>
-		<div class="service">
-			<span class="icon">&#128187;</span>
-			<h4>Infra Migration</h4>
-			<p>VM to Dockerized Kubernetes (AKS/EKS).</p>
-		</div>
-		<div class="service">
-			<span class="icon">&#128736;&#65039;</span>
-			<h4>Custom Automation Tools</h4>
-			<p>Bespoke software for unique infra challenges.</p>
-		</div>
-		<div class="service">
-			<span class="icon">&#9201;</span>
-			<h4>Flexible Engagement</h4>
-			<p>On-demand or monthly managed service.</p>
-		</div>
-		<div class="service">
-			<span class="icon">&#128274;</span>
-			<h4>Security Auditing</h4>
-			<p>Governance, compliance, and hardening.</p>
+		<div class="about-geo">
+			<div class="geo-item">
+				<span class="geo-dot"></span>
+				<span class="geo-city">Delaware, USA</span>
+				<span class="geo-role">Incorporated</span>
+			</div>
+			<div class="geo-line"></div>
+			<div class="geo-item">
+				<span class="geo-dot geo-dot--active"></span>
+				<span class="geo-city">Hong Kong</span>
+				<span class="geo-role">Operations Hub</span>
+			</div>
 		</div>
 	</section>
 
-	<section class="about">
-		<h3>About</h3>
-		<p>Kernelv5, Inc. is a Delaware C-Corp focused on Technology, Software, and Internet Business. With a primary operational hub in Hong Kong, the company leverages a global perspective to serve U.S. and international clients. We operate under a broad legal mandate to provide any lawful technology-related service with a focus on AI-enabled DevOps and platform engineering.</p>
-	</section>
-
-	<footer class="contact">
-		<p>Inquire regarding Technical Services or Staffing Solutions.</p>
-		<p>Email: <span class="email-placeholder">contact@kernelv5.com</span></p>
+	<!-- ── Contact Footer ───────────────────────────────── -->
+	<footer class="contact" id="contact">
+		<div class="contact-inner">
+			<span class="section-label">Get In Touch</span>
+			<h2>Ready to scale?</h2>
+			<p>Talk to us about your infrastructure or staffing needs.</p>
+			<a href="mailto:contact@kernelv5.com" class="btn-primary contact-cta">Send an Inquiry</a>
+			<a href="mailto:contact@kernelv5.com" class="email-link">contact@kernelv5.com</a>
+		</div>
 	</footer>
+
+	<script>
+	// ── Canvas removed — replaced by .svc-constellation ─
+	(function () {
+		const canvas = document.getElementById('hero-canvas');
+		if (!canvas) return;
+		const ctx = canvas.getContext('2d');
+		const DPR = window.devicePixelRatio || 1;
+
+		// Color palette per service [R,G,B]
+		const COL = {
+			hub:       [  0, 212, 255],   // cyan    - Cloud Technology (center)
+			iac:       [245, 166,  40],   // amber   - IaC
+			k8s:       [ 16, 219, 197],   // teal    - Kubernetes
+			docker:    [255, 140,  60],   // orange  - Docker
+			container: [255, 175,  90],   // warm    - Container
+			monitor:   [212, 111, 200],   // pink    - Monitoring
+			security:  [255,  70,  70],   // red     - Security
+			app:       [ 72, 210, 120],   // green   - Application
+			cicd:      [160, 220,  50],   // lime    - CI/CD
+		};
+
+		// Node definitions — hub at center, spokes radiate outward
+		const NODE_DEFS = [
+			// Central hub
+			{ id: 'hub',       rx: 0.50, ry: 0.47, col: 'hub',       label: 'Cloud Technology', shape: 'circle',  r: 22, hub: true },
+			// Primary spokes — tightened ~35% closer to hub
+			{ id: 'iac',       rx: 0.29, ry: 0.31, col: 'iac',       label: 'IaC',              shape: 'square',  r: 14 },
+			{ id: 'k8s',       rx: 0.50, ry: 0.25, col: 'k8s',       label: 'Kubernetes',       shape: 'hex',     r: 14 },
+			{ id: 'monitor',   rx: 0.72, ry: 0.34, col: 'monitor',   label: 'Monitoring',       shape: 'diamond', r: 13 },
+			{ id: 'security',  rx: 0.72, ry: 0.60, col: 'security',  label: 'Security',         shape: 'diamond', r: 13 },
+			{ id: 'app',       rx: 0.28, ry: 0.63, col: 'app',       label: 'Application',      shape: 'hex',     r: 14 },
+			// Sub-nodes of Kubernetes
+			{ id: 'docker',    rx: 0.33, ry: 0.13, col: 'docker',    label: 'Docker',           shape: 'square',  r: 11 },
+			{ id: 'container', rx: 0.67, ry: 0.13, col: 'container', label: 'Container',        shape: 'square',  r: 11 },
+			// Sub-node of Application
+			{ id: 'cicd',      rx: 0.18, ry: 0.77, col: 'cicd',      label: 'CI/CD',            shape: 'square',  r: 11 },
+			// Sub-node of Security
+			{ id: 'audit',     rx: 0.72, ry: 0.75, col: 'security',  label: 'Audit',            shape: 'square',  r: 11 },
+		];
+
+		const EDGE_DEFS = [
+			// Hub spokes (bidirectional packets)
+			['hub', 'iac'], ['hub', 'k8s'], ['hub', 'monitor'],
+			['hub', 'security'], ['hub', 'app'],
+			// Kubernetes children
+			['k8s', 'docker'], ['k8s', 'container'],
+			// Application child
+			['app', 'cicd'],
+			// Security child
+			['security', 'audit'],
+		];
+
+		let nodes = {};
+
+		function buildNodes() {
+			const w = canvas.offsetWidth, h = canvas.offsetHeight;
+			nodes = {};
+			NODE_DEFS.forEach(def => {
+				nodes[def.id] = {
+					bx: def.rx * w, by: def.ry * h,
+					x:  def.rx * w, y:  def.ry * h,
+					color: COL[def.col], r: def.r,
+					shape: def.shape, label: def.label,
+					hub: !!def.hub,
+					phase: Math.random() * Math.PI * 2,
+					drift: def.hub ? 1.5 : (def.r < 12 ? 5 : 3.5),
+				};
+			});
+		}
+
+		function resize() {
+			canvas.width  = canvas.offsetWidth  * DPR;
+			canvas.height = canvas.offsetHeight * DPR;
+			ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+			buildNodes();
+		}
+
+		// Hub spokes get 2 packets (outbound + inbound); sub-edges get 1
+		const PACKETS = EDGE_DEFS.flatMap(([a, b], i) =>
+			Array.from({ length: i < 5 ? 2 : 1 }, (_, k) => ({
+				a: k === 0 ? a : b,
+				b: k === 0 ? b : a,
+				t: Math.random(),
+				speed: 0.002 + Math.random() * 0.0022,
+			}))
+		);
+
+		// Live metric sparklines attached to Monitoring node
+		const SPARKLINES = [
+			{ label: 'CPU',  color: COL.monitor, vals: Array.from({length:28}, () => 0.25 + Math.random()*0.55) },
+			{ label: 'MEM',  color: COL.hub,     vals: Array.from({length:28}, () => 0.40 + Math.random()*0.45) },
+			{ label: 'NET',  color: COL.security, vals: Array.from({length:28}, () => 0.10 + Math.random()*0.65) },
+		];
+
+		let dashOff = 0, orbitAngle = 0, tick = 0;
+
+		function rrect(x, y, w, h, r) {
+			ctx.beginPath();
+			ctx.moveTo(x+r,y); ctx.lineTo(x+w-r,y); ctx.arcTo(x+w,y,x+w,y+r,r);
+			ctx.lineTo(x+w,y+h-r); ctx.arcTo(x+w,y+h,x+w-r,y+h,r);
+			ctx.lineTo(x+r,y+h); ctx.arcTo(x,y+h,x,y+h-r,r);
+			ctx.lineTo(x,y+r); ctx.arcTo(x,y,x+r,y,r);
+			ctx.closePath();
+		}
+
+		function drawShape(x, y, r, shape, color, alpha) {
+			const c = color.join(',');
+			ctx.strokeStyle = `rgba(${c},${alpha})`;
+			ctx.lineWidth = 1.8;
+			ctx.fillStyle = `rgba(${c},${alpha * 0.12})`;
+			if (shape === 'hex') {
+				ctx.beginPath();
+				for (let i = 0; i < 6; i++) {
+					const a = (Math.PI / 3) * i - Math.PI / 6;
+					i === 0 ? ctx.moveTo(x + r*Math.cos(a), y + r*Math.sin(a))
+					        : ctx.lineTo(x + r*Math.cos(a), y + r*Math.sin(a));
+				}
+				ctx.closePath(); ctx.fill(); ctx.stroke();
+			} else if (shape === 'diamond') {
+				ctx.beginPath();
+				ctx.moveTo(x, y - r*1.3); ctx.lineTo(x + r*1.1, y);
+				ctx.lineTo(x, y + r*1.3); ctx.lineTo(x - r*1.1, y);
+				ctx.closePath(); ctx.fill(); ctx.stroke();
+			} else if (shape === 'square') {
+				const s = r * 1.1;
+				rrect(x - s, y - s, s*2, s*2, s*0.22);
+				ctx.fill(); ctx.stroke();
+			} else {
+				ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI*2);
+				ctx.fill(); ctx.stroke();
+			}
+		}
+
+		function drawHubRings(n) {
+			const c = n.color.join(',');
+			const pulse = (Math.sin(n.phase) + 1) / 2;
+			// Outer dashed orbit ring
+			ctx.beginPath(); ctx.arc(n.x, n.y, n.r + 18, 0, Math.PI*2);
+			ctx.strokeStyle = `rgba(${c},${0.1 + pulse*0.08})`;
+			ctx.lineWidth = 1; ctx.setLineDash([3, 7]);
+			ctx.lineDashOffset = -orbitAngle * 20;
+			ctx.stroke(); ctx.setLineDash([]);
+			// Three orbiting dots
+			for (let i = 0; i < 3; i++) {
+				const a = orbitAngle + (Math.PI * 2 / 3) * i;
+				const ox = n.x + Math.cos(a) * (n.r + 18);
+				const oy = n.y + Math.sin(a) * (n.r + 18);
+				ctx.beginPath(); ctx.arc(ox, oy, 2.5, 0, Math.PI*2);
+				ctx.fillStyle = `rgba(${c},${0.5 + pulse*0.4})`; ctx.fill();
+			}
+			// Second inner ring (static glow band)
+			ctx.beginPath(); ctx.arc(n.x, n.y, n.r + 8, 0, Math.PI*2);
+			ctx.strokeStyle = `rgba(${c},${0.07 + pulse*0.06})`;
+			ctx.lineWidth = 6; ctx.stroke();
+		}
+
+		function drawNode(n) {
+			const pulse = (Math.sin(n.phase) + 1) / 2;
+			const alpha = 0.5 + pulse * 0.5;
+			const r = n.r + pulse * (n.hub ? 3 : 2);
+			const c = n.color.join(',');
+			// Radial glow — larger for hub
+			const glowR = n.hub ? r * 5.5 : r * 4.5;
+			const grd = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, glowR);
+			grd.addColorStop(0, `rgba(${c},${n.hub ? 0.22+pulse*0.12 : 0.13+pulse*0.08})`);
+			grd.addColorStop(1, `rgba(${c},0)`);
+			ctx.beginPath(); ctx.arc(n.x, n.y, glowR, 0, Math.PI*2);
+			ctx.fillStyle = grd; ctx.fill();
+			// Orbit rings only for hub
+			if (n.hub) drawHubRings(n);
+			drawShape(n.x, n.y, r, n.shape, n.color, alpha);
+			// Center dot
+			ctx.beginPath(); ctx.arc(n.x, n.y, n.hub ? 3.5 : 2.5, 0, Math.PI*2);
+			ctx.fillStyle = `rgba(${c},${alpha})`; ctx.fill();
+			// Label — hub gets larger font below
+			const fs = n.hub ? '700 8.5px' : (n.r < 12 ? '500 6.5px' : '500 7.5px');
+			ctx.font = `${fs} "DM Mono",monospace`;
+			ctx.textAlign = 'center';
+			ctx.fillStyle = `rgba(${c},${0.45 + pulse*0.4})`;
+			ctx.fillText(n.label.toUpperCase(), n.x, n.y + r + (n.hub ? 15 : 12));
+		}
+
+		function drawEdge(a, b) {
+			const na = nodes[a], nb = nodes[b]; if (!na || !nb) return;
+			const grd = ctx.createLinearGradient(na.x, na.y, nb.x, nb.y);
+			grd.addColorStop(0, `rgba(${na.color.join(',')},0.22)`);
+			grd.addColorStop(1, `rgba(${nb.color.join(',')},0.22)`);
+			ctx.beginPath(); ctx.moveTo(na.x, na.y); ctx.lineTo(nb.x, nb.y);
+			ctx.strokeStyle = grd; ctx.lineWidth = 1;
+			ctx.setLineDash([4, 9]); ctx.lineDashOffset = -dashOff;
+			ctx.stroke(); ctx.setLineDash([]);
+		}
+
+		function drawPacket(p) {
+			const na = nodes[p.a], nb = nodes[p.b]; if (!na || !nb) return;
+			const t = p.t;
+			const x = na.x + (nb.x - na.x) * t;
+			const y = na.y + (nb.y - na.y) * t;
+			const rv = v => Math.round(na.color[v]*(1-t) + nb.color[v]*t);
+			const c = `${rv(0)},${rv(1)},${rv(2)}`;
+			const grd = ctx.createRadialGradient(x, y, 0, x, y, 8);
+			grd.addColorStop(0, `rgba(${c},0.95)`);
+			grd.addColorStop(1, `rgba(${c},0)`);
+			ctx.beginPath(); ctx.arc(x, y, 8, 0, Math.PI*2);
+			ctx.fillStyle = grd; ctx.fill();
+			ctx.beginPath(); ctx.arc(x, y, 2.2, 0, Math.PI*2);
+			ctx.fillStyle = `rgba(${c},1)`; ctx.fill();
+		}
+
+		function drawMonitorChart() {
+			const mn = nodes['monitor'];
+			if (!mn) return;
+			const pw = 90, ph = 56, pad = 6;
+			// Anchor left of the monitor node using its base position (stable)
+			const px = mn.bx - pw - 14;
+			const py = mn.by - ph / 2 - 4;
+			const mc = COL.monitor.join(',');
+			// Connector line from chart right edge to monitor node
+			ctx.beginPath();
+			ctx.moveTo(px + pw, py + ph / 2);
+			ctx.lineTo(mn.x - mn.r * 1.2, mn.y);
+			ctx.strokeStyle = `rgba(${mc},0.15)`;
+			ctx.lineWidth = 1; ctx.setLineDash([2, 5]);
+			ctx.stroke(); ctx.setLineDash([]);
+			// Panel background + border
+			ctx.fillStyle = `rgba(${mc},0.05)`;
+			rrect(px, py, pw, ph, 5); ctx.fill();
+			ctx.strokeStyle = `rgba(${mc},0.22)`; ctx.lineWidth = 1; ctx.stroke();
+			// Header label
+			ctx.font = '500 6px "DM Mono",monospace'; ctx.textAlign = 'left';
+			ctx.fillStyle = `rgba(${mc},0.5)`;
+			ctx.fillText('// LIVE METRICS', px + 5, py + 8);
+			// Three sparklines stacked
+			const lineH = (ph - 14) / SPARKLINES.length;
+			SPARKLINES.forEach((s, i) => {
+				const sc = s.color.join(',');
+				const lx = px + pad, ly = py + 12 + i * lineH;
+				const lw = pw - pad * 2, lh = lineH - 3;
+				// Row label + live value
+				const val = s.vals[s.vals.length - 1];
+				ctx.font = '500 5.5px "DM Mono",monospace'; ctx.textAlign = 'left';
+				ctx.fillStyle = `rgba(${sc},0.55)`;
+				ctx.fillText(s.label, lx, ly + 6);
+				ctx.font = '700 6.5px "DM Mono",monospace'; ctx.textAlign = 'right';
+				ctx.fillStyle = `rgba(${sc},0.9)`;
+				ctx.fillText(Math.round(val * 100) + '%', px + pw - pad, ly + 6);
+				// Sparkline path
+				const step = (lw - 28) / (s.vals.length - 1);
+				const ox = lx + 28;
+				ctx.beginPath();
+				s.vals.forEach((v, j) => {
+					const sx = ox + j * step;
+					const sy = ly + lh - v * (lh - 2);
+					j === 0 ? ctx.moveTo(sx, sy) : ctx.lineTo(sx, sy);
+				});
+				ctx.strokeStyle = `rgba(${sc},0.7)`; ctx.lineWidth = 1; ctx.stroke();
+				// Area fill
+				const ex = ox + (s.vals.length - 1) * step;
+				const lv = s.vals[s.vals.length - 1];
+				ctx.lineTo(ex, ly + lh); ctx.lineTo(ox, ly + lh);
+				ctx.closePath(); ctx.fillStyle = `rgba(${sc},0.08)`; ctx.fill();
+				// Live cursor dot
+				ctx.beginPath(); ctx.arc(ex, ly + lh - lv * (lh - 2), 2, 0, Math.PI*2);
+				ctx.fillStyle = `rgba(${sc},1)`; ctx.fill();
+			});
+		}
+
+		function draw() {
+			const w = canvas.offsetWidth, h = canvas.offsetHeight;
+			ctx.clearRect(0, 0, w, h);
+			dashOff = (dashOff + 0.25) % 26;
+			orbitAngle += 0.007;
+			tick++;
+			Object.values(nodes).forEach(n => {
+				n.phase += 0.008;
+				n.x = n.bx + Math.sin(n.phase * 0.6)  * n.drift;
+				n.y = n.by + Math.cos(n.phase * 0.45) * n.drift;
+			});
+			// Update sparkline values periodically
+			if (tick % 18 === 0) {
+				SPARKLINES.forEach(s => {
+					const last = s.vals[s.vals.length - 1];
+					s.vals.push(Math.max(0.05, Math.min(0.97, last + (Math.random() - 0.47) * 0.09)));
+					if (s.vals.length > 28) s.vals.shift();
+				});
+			}
+			EDGE_DEFS.forEach(([a, b]) => drawEdge(a, b));
+			PACKETS.forEach(p => {
+				p.t = (p.t + p.speed) % 1;
+				drawPacket(p);
+			});
+			Object.values(nodes).forEach(drawNode);
+			drawMonitorChart();
+			requestAnimationFrame(draw);
+		}
+
+		resize();
+		window.addEventListener('resize', resize);
+		draw();
+	})();
+
+	// ── Stats: Animated Counter on Scroll ───────────────
+	(function () {
+		const els = document.querySelectorAll('.stat-num');
+		const ease = t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+		const io = new IntersectionObserver(entries => {
+			entries.forEach(entry => {
+				if (!entry.isIntersecting) return;
+				const el     = entry.target;
+				const target = parseInt(el.dataset.target, 10);
+				let start    = null;
+				const step = ts => {
+					if (!start) start = ts;
+					const p = Math.min((ts - start) / 1400, 1);
+					el.textContent = Math.floor(ease(p) * target);
+					if (p < 1) requestAnimationFrame(step);
+					else el.textContent = target;
+				};
+				requestAnimationFrame(step);
+				io.unobserve(el);
+			});
+		}, { threshold: 0.6 });
+		els.forEach(el => io.observe(el));
+	})();
+
+	// ── Services Map: stagger reveal on scroll ──────────
+	(function () {
+		const nodes = document.querySelectorAll('.service-node');
+		const io = new IntersectionObserver(entries => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('is-visible');
+					io.unobserve(entry.target);
+				}
+			});
+		}, { threshold: 0.15 });
+		nodes.forEach((n, i) => {
+			n.style.transitionDelay = `${i * 60}ms`;
+			io.observe(n);
+		});
+	})();
+	</script>
+
 </body>
 </html>
