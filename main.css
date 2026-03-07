@@ -5,17 +5,17 @@
 
 /* ── Design Tokens ───────────────────────────────────── */
 :root {
-  --bg:          #070c14;
+  --bg:          #ffffff;
   --surface:     #0c1420;
-  --card:        #0f1928;
-  --card-hover:  #132035;
-  --border:      rgba(255, 255, 255, 0.07);
+  --card:        #ffffff;
+  --card-hover:  #f5f7fa;
+  --border:      rgba(0, 0, 0, 0.10);
   --border-glow: rgba(0, 212, 255, 0.22);
   --accent:      #00d4ff;
   --accent-dim:  rgba(0, 212, 255, 0.08);
-  --text-1:      #e8edf5;
-  --text-2:      #7a8fa8;
-  --text-3:      #3d5470;
+  --text-1:      #000000;
+  --text-2:      #1a1a1a;
+  --text-3:      #444444;
   --ease:        cubic-bezier(0.22, 1, 0.36, 1);
   --side:        20%;
 }
@@ -52,7 +52,7 @@ body::before {
 /* ── Buttons ─────────────────────────────────────────── */
 .btn-primary {
   display: inline-block;
-  background: var(--accent);
+  background: #000000;
   color: #ffffff;
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
@@ -65,7 +65,7 @@ body::before {
 
 .btn-primary:hover {
   opacity: 0.88;
-  box-shadow: 0 0 22px rgba(0, 212, 255, 0.35);
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.25);
 }
 
 .btn-ghost {
@@ -127,7 +127,7 @@ body::before {
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: #000000;
   opacity: 0;
   animation: fadeUp 0.55s 0.05s var(--ease) forwards;
 }
@@ -139,10 +139,7 @@ body::before {
   line-height: 1.04;
   letter-spacing: -0.035em;
   margin: 0;
-  background: linear-gradient(110deg, #10dbc5 0%, #d46fc8 52%, #9b7df5 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #000000;
   opacity: 0;
   animation: fadeUp 0.55s 0.18s var(--ease) forwards;
 }
@@ -188,7 +185,7 @@ body::before {
 }
 
 .svc-lines line {
-  stroke: rgba(0, 212, 255, 0.22);
+  stroke: rgba(0, 130, 160, 0.50);
   stroke-width: 0.8;
   stroke-dasharray: 3 6;
   animation: dash-scroll 3s linear infinite;
@@ -201,8 +198,8 @@ body::before {
 /* Individual card */
 .svc-card {
   position: absolute;
-  background: rgba(var(--cx, 0,212,255), 0.10);
-  border: 1px solid rgba(var(--cx, 0,212,255), 0.42);
+  background: rgba(var(--cx, 0,130,160), 0.08);
+  border: 1px solid rgba(var(--cx, 0,130,160), 0.55);
   border-radius: 10px;
   padding: 0.7rem 0.9rem;
   min-width: 128px;
@@ -230,12 +227,12 @@ body::before {
 
 /* Hub card — more prominent */
 .svc-card--hub {
-  --cx: 0,212,255;
-  background: rgba(0, 212, 255, 0.14);
-  border-color: rgba(0, 212, 255, 0.60);
-  box-shadow: 0 0 48px rgba(0, 212, 255, 0.28),
-              0 0 96px rgba(0, 212, 255, 0.10),
-              inset 0 0 20px rgba(0, 212, 255, 0.10);
+  --cx: 0,130,160;
+  background: rgba(0, 130, 160, 0.10);
+  border-color: rgba(0, 130, 160, 0.65);
+  box-shadow: 0 0 48px rgba(0, 130, 160, 0.20),
+              0 0 96px rgba(0, 130, 160, 0.08),
+              inset 0 0 20px rgba(0, 130, 160, 0.08);
   animation-duration: 5s;
 }
 
@@ -356,7 +353,7 @@ body::before {
   font-size: 0.68rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: #000000;
   display: block;
   margin-bottom: 1rem;
 }
@@ -423,7 +420,7 @@ body::before {
   font-size: 0.68rem;
   font-weight: 500;
   letter-spacing: 0.1em;
-  color: var(--accent);
+  color: #000000;
 }
 
 .service-node h3 {
@@ -508,7 +505,7 @@ body::before {
   align-items: center;
   gap: 6rem;
   padding: 6rem var(--side);
-  background: var(--surface);
+  background: #ffffff;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
@@ -718,7 +715,7 @@ body::before {
 .contact {
   position: relative;
   z-index: 1;
-  background: var(--surface);
+  background: #ffffff;
   border-top: 1px solid var(--border);
 }
 

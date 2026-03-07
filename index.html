@@ -30,21 +30,21 @@
 			<div class="svc-constellation">
 
 				<!-- Hub -->
-				<div class="svc-card svc-card--hub" style="top:40%;left:36%;--cx:0,212,255">
+				<div class="svc-card svc-card--hub" style="top:40%;left:36%;--cx:0,130,160">
 					<span class="svc-dot"></span>
 					<span class="svc-name">Cloud Technology</span>
 					<span class="svc-sub">Core Platform</span>
 				</div>
 
 				<!-- IaC -->
-				<div class="svc-card" style="top:24%;left:2%;--cx:245,166,40;--delay:0.6s">
+				<div class="svc-card" style="top:24%;left:2%;--cx:170,100,0;--delay:0.6s">
 					<span class="svc-dot"></span>
 					<span class="svc-name">IaC</span>
 					<span class="svc-sub">Terraform &middot; Pulumi</span>
 				</div>
 
 				<!-- Kubernetes -->
-				<div class="svc-card" style="top:4%;left:32%;--cx:16,219,197;--delay:1.1s">
+				<div class="svc-card" style="top:4%;left:32%;--cx:0,140,120;--delay:1.1s">
 					<span class="svc-dot"></span>
 					<span class="svc-name">Kubernetes</span>
 					<div class="svc-tags">
@@ -54,7 +54,7 @@
 				</div>
 
 				<!-- Monitoring -->
-				<div class="svc-card" style="top:10%;left:66%;--cx:212,111,200;--delay:0.3s">
+				<div class="svc-card" style="top:10%;left:66%;--cx:160,40,145;--delay:0.3s">
 					<span class="svc-dot"></span>
 					<span class="svc-name">Monitoring</span>
 					<span class="svc-sub">Observability</span>
@@ -67,7 +67,7 @@
 				</div>
 
 				<!-- Security -->
-				<div class="svc-card" style="top:56%;left:66%;--cx:255,70,70;--delay:0.9s">
+				<div class="svc-card" style="top:56%;left:66%;--cx:200,20,20;--delay:0.9s">
 					<span class="svc-dot"></span>
 					<span class="svc-name">Security</span>
 					<div class="svc-tags">
@@ -77,7 +77,7 @@
 				</div>
 
 				<!-- Application -->
-				<div class="svc-card" style="top:64%;left:28%;--cx:72,210,120;--delay:1.4s">
+				<div class="svc-card" style="top:64%;left:28%;--cx:10,150,65;--delay:1.4s">
 					<span class="svc-dot"></span>
 					<span class="svc-name">Application</span>
 					<div class="svc-tags">
@@ -274,19 +274,13 @@
 		<div class="about-content">
 			<span class="section-label">About Us</span>
 			<h2>Global Reach.<br>Local Precision.</h2>
-			<p>Kernelv5, Inc. is a Delaware C-Corp with a primary operational hub in Hong Kong, delivering AI-enabled DevOps, platform engineering, and technical talent acquisition to enterprise clients across North America and Asia-Pacific. We operate under a broad mandate to provide any lawful technology-related service with a focus on measurable business outcomes.</p>
+			<p>Kernelv5, Inc. is a Delaware C-Corp delivering AI-enabled DevOps, platform engineering, and technical talent acquisition to enterprise clients across North America and Asia-Pacific. We operate under a broad mandate to provide any lawful technology-related service with a focus on measurable business outcomes.</p>
 		</div>
 		<div class="about-geo">
 			<div class="geo-item">
-				<span class="geo-dot"></span>
+				<span class="geo-dot geo-dot--active"></span>
 				<span class="geo-city">Delaware, USA</span>
 				<span class="geo-role">Incorporated</span>
-			</div>
-			<div class="geo-line"></div>
-			<div class="geo-item">
-				<span class="geo-dot geo-dot--active"></span>
-				<span class="geo-city">Hong Kong</span>
-				<span class="geo-role">Operations Hub</span>
 			</div>
 		</div>
 	</section>
@@ -297,8 +291,13 @@
 			<span class="section-label">Get In Touch</span>
 			<h2>Ready to scale?</h2>
 			<p>Talk to us about your infrastructure or staffing needs.</p>
-			<a href="mailto:contact@kernelv5.com" class="btn-primary contact-cta">Send an Inquiry</a>
-			<a href="mailto:contact@kernelv5.com" class="email-link">contact@kernelv5.com</a>
+			<a href="#" class="btn-primary contact-cta" id="cta-email">Send an Inquiry</a>
+			<script>
+				(function(){
+					var u='kernelv5',d='outlook.com',e=u+'@'+d;
+					document.getElementById('cta-email').href='mailto:'+e;
+				})();
+			</script>
 		</div>
 	</footer>
 
